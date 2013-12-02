@@ -1,0 +1,120 @@
+                    Nicholas Paul Sheppard's Licence
+                             Version 1.10
+                            21st May 1999
+
+Preamble
+--------
+
+This licence is intended to guarantee the free distribution, use and
+modification of the accompanying package for non-profit purposes, to protect
+the intellectual property rights of the author(s) of the package, and to
+dissolve the author(s) of all responsibility for use of the package.
+
+This package is produced on a non-profit basis for the benefit of the general
+community.
+
+It is usual practice in software licensing to deny all responsibility for
+the quality and usefulness of the product, even for products for which large
+sums are charged and which carry great promises in advertising material. This
+licence continues this dubious tradition by arguing that the user gets what he
+or she pays for. While the author(s) offer every hope that the package is
+defect-free, and that the user finds the package useful for its stated purpose,
+as this licence precludes the author(s) from receiving payment for their work,
+they cannot guarantee that they have the resources to ensure perfection of the
+package. The author(s) certainly will not take any responsibility for anything
+the user did over which they have no control.
+
+
+The Agreement
+-------------
+
+Use or distribution of this package, either as-is or in an essentially
+unmodified form, either alone or in conjunction with another product, indicates
+acceptance of the terms of this licence.
+
+The package may not be used, distributed or modified under any conditions
+other than those set out in this licence.
+
+
+Distribution
+------------
+
+This section covers distribution of the package in an essentially unaltered
+form, that is, a form in which no essential modifications (as described in the
+`Modification' section below) have been made to the package. Such a package may
+be distributed under the following conditions:
+
+  (a) a copy of this licence is distributed verbatim with the distribution,
+      and
+
+  (b) no charge is made for the distribution, other than possibly to cover
+      the reasonable costs incurred in the act of distribution (such as, but
+      not limited to, postage, disks, network charges, etc.), either as-is or
+      as part of or in association with another product.
+
+The unmodified package must be distributed under this licence.
+
+
+Modification
+------------
+
+This section covers distribution of the package in a form in which it has been
+modified in some essential way. An `essential modification' of the package
+makes non-trivial alterations throughout a substantial portion of the package.
+It does not include, for example, straightforward translation, making a
+distribution of a verbatim portion of the package, or altering the format of
+the distribution. Such modified packages may be distributed under the following
+conditions:
+
+  (a) documentation for the resulting modification duly notes the changes
+      that have been from the original distribution, and the modified
+      distribution is assigned a different name to that of the original
+      distribution,
+
+  (b) the contribution of all authors of this package and forebearing packages
+      are duly noted.
+
+Such a modified package may be licensed under either
+
+  (a) this licence or (at your option) a later version of this licence,
+
+  (b) the GNU General Public Licence (whichever version is current at the time
+      the modification is made, or a later version), or
+
+  (c) (if appropriate) the GNU Library General Public Licence
+
+and distributed under the conditions of the appropriate licence.
+
+
+Conditions of Use
+-----------------
+
+This package may not be used for financial gain, either directly or indirectly,
+or in association with other for-profit activities. Hence, it may not be used
+in a for-profit corporation even if the package is not itself being sold or
+used to create saleable products.
+
+The package may be used
+
+   (a) for any non-profit personal use,
+
+   (c) in any not-for-profit organisation, or
+
+   (b) in any Government agency other than a for-profit corporation owned
+       in whole or in part by the Government.
+
+A link or reference to the package may be made for any purpose other than
+advertisement of a for-profit product.
+
+
+Warranty
+--------
+
+The package is supplied on an as-is basis in the hope that it will be useful,
+entertaining, educational, and so forth, but is distributed with no warranty
+whatsoever, or guarantee of fitness for any particular purpose.
+
+Use of the package is at the user's own risk and the author(s) accept no
+responsibility for any loss, damage, pain, etc. that might be caused by the use
+of the package, either directly or indirectly, either alone or in conjunction
+with another product or item.

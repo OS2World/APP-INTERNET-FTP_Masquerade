@@ -1,0 +1,91 @@
+FTP Masquerade Version 1.10
+(C) 2000, 2001 Nicholas Paul Sheppard. See the file licence.txt for details.
+
+INTRODUCTION
+============
+
+FTP Masquerade is a small utility for getting around the limitations on FTP
+imposed by IP masquerading. It allows a host behind a masquerading firewall use
+FTP in active mode (the default mode for most FTP programmes) by tricking the
+FTP programme into using the masquerading firewall as a proxy for accessing an
+FTP server, in a similar way to IP masquerading.
+
+
+INSTALLATION
+============
+
+I distribute FTP Masquerade as source code only. If you have obtained an
+executable from someone else, you can skip this section and simply put the
+executable in some convenient directory.
+
+The source is standard C with standard BSD sockets, so any system supporting
+these standards should work. I use GCC. There are pre-configured make files
+for several systems, which can be used by calling the top-level make file with
+target `os2', `linux' or `solaris'. These will compile the ftpmasqd executable
+and leave it in the ./src directory.
+
+If there is no pre-configured make file for your system, you can either modify
+one of the existing configurations in ./config, or compile the executable
+without a make utility by compiling ftpmasqd.c, sockio.c, logio.c, ftp.c and
+linking them all with the sockets library.
+
+Copy the ftpmasqd executable to a convenient directory, and you're done. You can
+also add it to inetd.conf if you wish, of course (see the inetd documentation,
+and use ftpmasqd's -p 0 option).
+
+
+USING FTPMASQD
+==============
+
+The ftpmasqd server allows several command line options:
+
+  -h[!] <host>
+
+  Set the default host. If the client does not specify a host name (see below),
+  ftpmasqd will connect to this host. If the ! flag is specified, only the
+  default host will be used regardless of what the client specifies. This
+  option can be used for making ftpmasqd look like a normal FTP server, e.g.
+  if you have an FTP server behind a masquerading firewall, this option can
+  make the firewall appear to be a normal FTP server.
+
+  -m <file>
+
+  Send the contents of <file> to the client upon connection, a la
+  /etc/ftpwelcome.
+
+  -p <port>
+
+  Set the port number that ftpmasqd listens to. By default, this is 8021.
+  If <port> is zero, ftpmasqd will not open its own port, but instead
+  assume that file handle 0 is already connected to the client; use this
+  option if ftpmasqd is being started by inetd.
+
+  -v <file>
+
+  Send verbose output to <file>. If <file> is -, write verbose output to
+  standard output. If this option is not present, ftpmasqd runs silently.
+
+  -?
+
+  Show a brief help screen
+
+With ftpmasqd running on the server, an ordinary FTP client can connect to it.
+Remember to FTP to ftpmasqd's port (usually 8021), not the standard FTP port
+(21).
+
+Log-in with a username of <user>@<host>, where <user> is the username you wish
+to log in as on a host called <host>. If there is no @ symbol and the -h option
+was not specified, ftpmasqd assumes that you are logging in anonymously to the
+host you have given. If there was no @ symbol and the -h option was specified,
+the default host is used. From then on, you can use your FTP programme exactly
+as if it were directly connected to the actual FTP server.
+
+
+FURTHER INFORMATION
+===================
+
+The author of FTP Masquerade is Nicholas Paul Sheppard (nps@zeta.org.au). You
+can send me bug reports, feature requests and comments. The latest information
+on FTP Masquerade can be obtained from my web site at
+
+	http://www.zeta.org.au/~nps/software/ftpmasq/en/index.html

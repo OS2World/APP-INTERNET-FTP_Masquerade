@@ -1,0 +1,9 @@
+#!/usr/bin/csh
+
+set PACKAGE = ftpmasq-1.10-src.tar
+
+tar cf $PACKAGE src/*.c src/*.h src/Makefile
+tar rf $PACKAGE doc/*.txt readme.txt
+tar rf $PACKAGE Makefile config/*
+tar rf $PACKAGE package package.cmd
+gzip $PACKAGE

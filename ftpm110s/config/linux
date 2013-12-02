@@ -1,0 +1,8 @@
+CC      = gcc
+CFLAGS  = -Wall -O6
+LD      = gcc
+LDFLAGS = -s
+LIBS    =
+RM      = rm
+O       = .o
+X       =

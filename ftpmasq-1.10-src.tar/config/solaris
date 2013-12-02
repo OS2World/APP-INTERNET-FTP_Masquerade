@@ -1,0 +1,8 @@
+CC      = cc
+CFLAGS  = -s
+LD      = cc
+LDFLAGS = -s
+LIBS    = -lnsl -lsocket
+RM      = rm
+O       = .o
+X       =

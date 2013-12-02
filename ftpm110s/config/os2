@@ -1,0 +1,8 @@
+CC      = gcc
+CFLAGS  = -Wall -Zomf -O2
+LD      = gcc
+LDFLAGS = -Zomf -s
+LIBS    = -lsocket
+RM      = del
+O       = .obj
+X       = .exe

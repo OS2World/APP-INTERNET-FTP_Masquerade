@@ -1,0 +1,25 @@
+================================================================================
+Version 1.00 released 12 November 2000
+================================================================================
+
+ * added -p 0 option so that ftpmasqd can be started by inetd
+
+ * ftpmasqd now repeats the server's welcome message to the client
+
+ * FTP commands intercepted by ftpmasqd are now recognised case-insensitively
+
+ * added -m option for displaying a welcome message to the client
+
+ * added Solaris configuration file
+
+ * added -h option so that ftpmasqd can be used to mimic a normal FTP server
+
+ * added RFC 959 (File Transfer Protocol) to the distribution
+
+ * FTP servers that didn't ask for passwords (e.g. OS/2) would cause the
+   client to hang waiting for a password prompt
+
+================================================================================
+Version 1.10 released 28th September 2001
+================================================================================
+
